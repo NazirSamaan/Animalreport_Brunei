@@ -2027,7 +2027,6 @@ class _ComplaintFormState extends State<ComplaintForm> {
 
   ImageAndLocationData? capturedData;
   bool _isLoading = false;
-  List reports = [];
   String? _capturedDateTime;
   List<Map<String, dynamic>> animals = [];
   Map<String, dynamic>? selectedAnimal;
@@ -2057,18 +2056,6 @@ class _ComplaintFormState extends State<ComplaintForm> {
         }
       }
     } catch (_) {}
-  }
-
-  Future<void> _fetchReports() async {
-    var url = Uri.parse("$baseUrl/get_reports.php");
-    var response = await http.get(url);
-    if (response.statusCode == 200) {
-      setState(() {
-        reports = json.decode(response.body);
-      });
-    } else {
-      print("Failed to load reports");
-    }
   }
 
   Future<void> _uploadReport() async {
@@ -2156,7 +2143,6 @@ class _ComplaintFormState extends State<ComplaintForm> {
             _capturedDateTime = null;
             selectedAnimal = null;
           });
-          _fetchReports();
         } else {
           ScaffoldMessenger.of(context).showSnackBar(
             SnackBar(
