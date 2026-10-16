@@ -103,7 +103,7 @@ $httpCode = 0;
 $curlError = '';
 $providerStatus = '';
 $providerMessage = '';
-$models = ['gemini-3.6-flash', 'gemini-3.5-flash-lite'];
+$models = ['gemini-3.5-flash-lite', 'gemini-3.6-flash'];
 
 foreach ($models as $model) {
     $url = 'https://generativelanguage.googleapis.com/v1beta/models/' .
@@ -139,7 +139,7 @@ foreach ($models as $model) {
         ($providerMessage ? ' - ' . substr(strip_tags($providerMessage), 0, 240) : '')
     );
 
-    if (!in_array($httpCode, [429, 500, 503], true)) {
+    if (!in_array($httpCode, [404, 429, 500, 503], true)) {
         break;
     }
 }

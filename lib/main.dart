@@ -3277,6 +3277,7 @@ class _CameraMapScreenState extends State<CameraMapScreen> {
           : Map<String, dynamic>.from(catalogMatch)
             ..['source'] = 'online_ai';
       resultAnimal['source'] = 'online_ai';
+      resultAnimal['confidence'] = onlineAnimal['confidence'];
       final confidence = resultAnimal['confidence'];
       return _SpeciesScanResult(
         animal: resultAnimal,
