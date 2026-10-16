@@ -1,0 +1,198 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    background-image: url('img/crocodile.jpg');
+    background-color: green;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 90vh;
+}
+
+.box {
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 25px 25px;
+    border-radius: 30px;
+    box-shadow: 0 0 128 rgba(0,0,0,0.1),
+                0 32px 64px -48px rgba(0,0,0,0.1)
+}
+
+
+.form-box{
+    width: 450px;
+    margin: 0px 10px;
+}
+
+.form-box h2{
+    font-size: 25px;
+    font-weight: 500;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #e6e6e6;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.field.submit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px; 
+}
+
+.field.submit input {
+    height: 40px; 
+    width: 100%; 
+    font-size: 16px;
+    padding: 0 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #655565; 
+    color: white; 
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+
+.form-box p{
+    text-align: center;
+}
+.form-box form .field{
+    display: flex;
+    margin-bottom: 10px;
+    flex-direction: column;
+
+}
+.form-box form .field .submit{
+    display: flex;
+    margin-bottom: 10px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-box form .input input{
+    height: 40px;
+    width: 100%;
+    font-size: 16px;
+    padding: 0 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    outline: none;
+    margin-top: 10px;
+}
+
+.form-box form .username input{
+    height: 40px;
+    width: 100%;
+    font-size: 16px;
+    padding: 0 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    outline: none;
+    margin-top: 10px;
+}
+
+.form-box form .phone input{
+    height: 40px;
+    width: 100%;
+    font-size: 16px;
+    padding: 0 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    outline: none;
+    margin-top: 10px;
+}
+
+
+.form-box form .email input{
+    height: 40px;
+    width: 100%;
+    font-size: 16px;
+    padding: 0 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    outline: none;
+    margin-top: 10px;
+}
+.form-box form .password input{
+    height: 40px;
+    width: 100%;
+    font-size: 16px;
+    padding: 0 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    outline: none;
+    margin-top: 10px;
+}
+
+
+
+button{
+    height: 35px;
+    background: rgba(39, 38, 56, 0.1);
+    border: 0;
+    border-radius: 5px;
+    color: #261515;
+    font-size: 15px;
+    cursor: pointer;
+    transition: all .3s;
+    margin-top: 10px;
+    padding: 0px 10px;
+    width: 60%;
+}
+
+.form-box form input{
+    height: 35px;
+    background: rgba(39, 38, 56, 0.1);
+    border: 0;
+    border-radius: 5px;
+    color: #302929;
+    font-size: 15px;
+    cursor: pointer;
+    transition: all .3s;
+    margin-top: 10px;
+    padding: 0px 10px;
+    width: 60%;
+}
+
+.error {
+    color: red;
+    margin-top: 5px;
+    background-color: #F2DEDE;
+    border: 1px solid #EED3D7;
+    padding: 5px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.form-box form .error-msg{
+    color: red;
+    margin-top: 5px;
+    background-color: #F2DEDE;
+    border: 1px solid #EED3D7;
+    padding: 5px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+
+    
+}
+
+.login-link {
+    text-decoration: none;
+    color: blue; 
+}
