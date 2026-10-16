@@ -27,7 +27,7 @@ const _textPrimary = Color(0xFF1D332E);
 const _textMuted = Color(0xFF65756F);
 const _apiBaseUrl = String.fromEnvironment(
   'API_BASE_URL',
-  defaultValue: 'http://192.168.100.17/BruneiGoOnlineApps/wildlife_api',
+  defaultValue: 'https://nazir21.alwaysdata.net/wildlife_api',
 );
 
 String? _animalPhotoUrl(String baseUrl, dynamic storedPath) {
