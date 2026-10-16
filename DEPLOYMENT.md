@@ -13,8 +13,8 @@ cannot run the PHP backend or MySQL database.
    database. This imports schema and catalog data, not existing local accounts
    or reports. A separate private database export is needed to migrate those.
 3. Replace the seeded admin password before exposing the admin interface.
-   The current admin login uses a plaintext comparison; password hashing and
-   stronger authentication should be addressed before production use.
+   The starter password is rejected by admin login. Existing plaintext passwords
+   are upgraded to password hashes on the first successful sign-in.
 4. Upload `admin/` and `wildlife_api/` to the PHP host. Keep uploads persistent
    and disallow script execution in the uploads directory. Transfer existing
    private uploads separately if migrating live records. Only catalog images
